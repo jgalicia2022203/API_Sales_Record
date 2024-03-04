@@ -1,22 +1,28 @@
 {
-  "name": "mongodb_nodejs_final_project",
+  "name": "API_Sales_Record",
   "version": "1.0.0",
-  "description": "Final Project 2022203",
-  "main": "index.js",
+  "description": "This project focuses on managing the registration of sales, online products and other commercial operations of a company.",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scripts": "node index.js"
+    "scripts": "node app.js"
   },
-  "keywords": [],
+  "keywords": [
+    "ESModule"
+  ],
   "author": "Juan Luis Galicia Mazariegos",
-  "license": "ISC",
+  "license": "MIT",
+  "type": "module",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
-    "dotenv": "^16.4.4",
-    "express": "^4.18.2",
+    "dotenv": "^16.4.5",
+    "excel4node": "^1.8.2",
+    "express": "^4.18.3",
     "express-validator": "^7.0.1",
+    "helmet": "^7.1.0",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.1.3"
+    "mongoose": "^8.2.0",
+    "morgan": "^1.10.0"
   }
 }
