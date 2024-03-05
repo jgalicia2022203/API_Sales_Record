@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "SALES_RECORD",
-    "dateExported": "2024-03-04T22:51:07.315Z",
+    "dateExported": "2024-03-05T22:07:20.489Z",
     "version": "1.1",
     "folders": [
         {
@@ -117,18 +117,16 @@
             "tests": []
         },
         {
-            "_id": "23e87992-d4a9-4775-a6d0-ab28ae73877f",
+            "_id": "1d70557a-9b72-4d96-9292-f2f315c8bae2",
             "colId": "54df71e5-64ee-46b0-a2ac-2dd5e693582e",
-            "containerId": "390eb07d-86e3-4c08-80b7-0e4992e13b91",
-            "name": "REGISTER USER",
+            "containerId": "4803adbf-2fd3-45dd-8aa9-03ba29a79bd4",
+            "name": "PRODUCT INFO",
             "url": "",
-            "method": "POST",
-            "sortNum": 10000,
-            "created": "2024-03-04T22:17:21.807Z",
-            "modified": "2024-03-04T22:17:25.112Z",
-            "headers": [],
-            "params": [],
-            "tests": []
+            "method": "GET",
+            "sortNum": 15000,
+            "created": "2024-03-04T21:54:59.070Z",
+            "modified": "2024-03-04T21:54:59.070Z",
+            "headers": []
         },
         {
             "_id": "dea58770-ba54-4251-b865-072eb9739556",
@@ -143,37 +141,13 @@
             "headers": []
         },
         {
-            "_id": "1d70557a-9b72-4d96-9292-f2f315c8bae2",
-            "colId": "54df71e5-64ee-46b0-a2ac-2dd5e693582e",
-            "containerId": "4803adbf-2fd3-45dd-8aa9-03ba29a79bd4",
-            "name": "PRODUCT INFO",
-            "url": "",
-            "method": "GET",
-            "sortNum": 22500,
-            "created": "2024-03-04T21:54:59.070Z",
-            "modified": "2024-03-04T21:54:59.070Z",
-            "headers": []
-        },
-        {
-            "_id": "6465fa70-b792-488a-9b25-e19d8d737538",
-            "colId": "54df71e5-64ee-46b0-a2ac-2dd5e693582e",
-            "containerId": "4803adbf-2fd3-45dd-8aa9-03ba29a79bd4",
-            "name": "OUT OF STOCK PRODUCTS",
-            "url": "",
-            "method": "GET",
-            "sortNum": 25000,
-            "created": "2024-03-04T22:07:02.858Z",
-            "modified": "2024-03-04T22:07:02.858Z",
-            "headers": []
-        },
-        {
             "_id": "9f59369a-6f96-490d-9d91-b6694b4f4722",
             "colId": "54df71e5-64ee-46b0-a2ac-2dd5e693582e",
             "containerId": "4803adbf-2fd3-45dd-8aa9-03ba29a79bd4",
-            "name": "EDIT PRODUCT DETAILS",
+            "name": "EDIT PRODUCT",
             "url": "",
             "method": "PUT",
-            "sortNum": 40000,
+            "sortNum": 22500,
             "created": "2024-03-04T21:54:59.071Z",
             "modified": "2024-03-04T21:54:59.071Z",
             "headers": [],
@@ -187,12 +161,36 @@
             "name": "EDIT PRODUCT INFO",
             "url": "",
             "method": "PUT",
-            "sortNum": 45000,
+            "sortNum": 23750,
             "created": "2024-03-04T22:10:37.673Z",
             "modified": "2024-03-04T22:10:42.215Z",
             "headers": [],
             "params": [],
             "tests": []
+        },
+        {
+            "_id": "6465fa70-b792-488a-9b25-e19d8d737538",
+            "colId": "54df71e5-64ee-46b0-a2ac-2dd5e693582e",
+            "containerId": "4803adbf-2fd3-45dd-8aa9-03ba29a79bd4",
+            "name": "OUT OF STOCK",
+            "url": "",
+            "method": "GET",
+            "sortNum": 25000,
+            "created": "2024-03-04T22:07:02.858Z",
+            "modified": "2024-03-04T22:07:02.858Z",
+            "headers": []
+        },
+        {
+            "_id": "8dceb844-8d52-493e-9239-e3c7bcaf0241",
+            "colId": "54df71e5-64ee-46b0-a2ac-2dd5e693582e",
+            "containerId": "4803adbf-2fd3-45dd-8aa9-03ba29a79bd4",
+            "name": "BEST SELLERS",
+            "url": "",
+            "method": "GET",
+            "sortNum": 37500,
+            "created": "2024-03-05T21:58:42.659Z",
+            "modified": "2024-03-05T21:58:42.659Z",
+            "headers": []
         },
         {
             "_id": "76e24f89-bf78-4176-a264-d5d808733e3b",
@@ -204,6 +202,20 @@
             "sortNum": 50000,
             "created": "2024-03-04T21:54:59.072Z",
             "modified": "2024-03-04T21:54:59.072Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "99f15fd7-e48e-4b92-a19f-6d61429d52d6",
+            "colId": "54df71e5-64ee-46b0-a2ac-2dd5e693582e",
+            "containerId": "69264757-a32f-4c9f-9291-d110d122b746",
+            "name": "REGISTER ADMIN",
+            "url": "",
+            "method": "POST",
+            "sortNum": 55000,
+            "created": "2024-03-04T22:18:26.430Z",
+            "modified": "2024-03-04T22:18:30.262Z",
             "headers": [],
             "params": [],
             "tests": []
@@ -249,6 +261,20 @@
             "tests": []
         },
         {
+            "_id": "bab7de9b-a33f-4a4a-b03a-a2320cb6b4f2",
+            "colId": "54df71e5-64ee-46b0-a2ac-2dd5e693582e",
+            "containerId": "e9883978-9953-4252-a1e8-1a261e25ed46",
+            "name": "EDIT INVOICE",
+            "url": "",
+            "method": "PUT",
+            "sortNum": 85000,
+            "created": "2024-03-04T21:54:59.083Z",
+            "modified": "2024-03-04T21:54:59.083Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
             "_id": "69ded06d-b39f-4d1d-8832-3409f43d67ea",
             "colId": "54df71e5-64ee-46b0-a2ac-2dd5e693582e",
             "containerId": "b5924832-d3e8-4e10-a1e7-cdec961f00be",
@@ -258,20 +284,6 @@
             "sortNum": 90000,
             "created": "2024-03-04T21:54:59.076Z",
             "modified": "2024-03-04T21:54:59.076Z",
-            "headers": [],
-            "params": [],
-            "tests": []
-        },
-        {
-            "_id": "72eaf19e-9881-4939-bc8c-facc3ab29450",
-            "colId": "54df71e5-64ee-46b0-a2ac-2dd5e693582e",
-            "containerId": "69264757-a32f-4c9f-9291-d110d122b746",
-            "name": "ADD USER",
-            "url": "",
-            "method": "POST",
-            "sortNum": 110000,
-            "created": "2024-03-04T21:54:59.077Z",
-            "modified": "2024-03-04T21:54:59.077Z",
             "headers": [],
             "params": [],
             "tests": []
@@ -331,20 +343,6 @@
             "tests": []
         },
         {
-            "_id": "2b3b5d11-fea3-43b3-9ebd-7b5c3916462c",
-            "colId": "54df71e5-64ee-46b0-a2ac-2dd5e693582e",
-            "containerId": "e9883978-9953-4252-a1e8-1a261e25ed46",
-            "name": "ADD INVOICE",
-            "url": "",
-            "method": "POST",
-            "sortNum": 140000,
-            "created": "2024-03-04T21:54:59.081Z",
-            "modified": "2024-03-04T21:54:59.081Z",
-            "headers": [],
-            "params": [],
-            "tests": []
-        },
-        {
             "_id": "449ac5c8-cfc9-429f-bd77-7683855142bd",
             "colId": "54df71e5-64ee-46b0-a2ac-2dd5e693582e",
             "containerId": "e9883978-9953-4252-a1e8-1a261e25ed46",
@@ -360,7 +358,7 @@
             "_id": "44a4d126-12cd-439c-9abb-9cb91ceb6b35",
             "colId": "54df71e5-64ee-46b0-a2ac-2dd5e693582e",
             "containerId": "e9883978-9953-4252-a1e8-1a261e25ed46",
-            "name": "INVOICE PRODUCTS",
+            "name": "INVOICE DETAILS",
             "url": "",
             "method": "GET",
             "sortNum": 175000,
@@ -369,32 +367,30 @@
             "headers": []
         },
         {
-            "_id": "bab7de9b-a33f-4a4a-b03a-a2320cb6b4f2",
+            "_id": "23e87992-d4a9-4775-a6d0-ab28ae73877f",
             "colId": "54df71e5-64ee-46b0-a2ac-2dd5e693582e",
-            "containerId": "e9883978-9953-4252-a1e8-1a261e25ed46",
-            "name": "EDIT INVOICE",
+            "containerId": "9ede59ad-e254-4eb4-86ee-13e2ce832718",
+            "name": "REGISTER CLIENT",
             "url": "",
-            "method": "PUT",
-            "sortNum": 180000,
-            "created": "2024-03-04T21:54:59.083Z",
-            "modified": "2024-03-04T21:54:59.083Z",
+            "method": "POST",
+            "sortNum": 205000,
+            "created": "2024-03-04T22:17:21.807Z",
+            "modified": "2024-03-04T22:17:25.112Z",
             "headers": [],
             "params": [],
             "tests": []
         },
         {
-            "_id": "99f15fd7-e48e-4b92-a19f-6d61429d52d6",
+            "_id": "2affee69-9d17-4d25-b616-fd9ef19dcd24",
             "colId": "54df71e5-64ee-46b0-a2ac-2dd5e693582e",
-            "containerId": "fc7b5e07-796d-4731-8b3f-68b0614e7cb2",
-            "name": "REGISTER ADMIN",
+            "containerId": "9ede59ad-e254-4eb4-86ee-13e2ce832718",
+            "name": "EDIT PROFILE",
             "url": "",
-            "method": "POST",
-            "sortNum": 300000,
-            "created": "2024-03-04T22:18:26.430Z",
-            "modified": "2024-03-04T22:18:30.262Z",
-            "headers": [],
-            "params": [],
-            "tests": []
+            "method": "GET",
+            "sortNum": 307500,
+            "created": "2024-03-04T22:33:55.953Z",
+            "modified": "2024-03-04T22:33:55.953Z",
+            "headers": []
         },
         {
             "_id": "1bb9effb-bcba-4d1e-a862-fa92ef68f931",
@@ -436,13 +432,16 @@
             "_id": "8e2731d1-cc62-469e-9a4b-0628589e304e",
             "colId": "54df71e5-64ee-46b0-a2ac-2dd5e693582e",
             "containerId": "a3c19430-b938-4ef3-ba3b-54293d674cc4",
-            "name": "SHOPPING CART",
+            "name": "ADD PRODUCTS",
             "url": "",
-            "method": "GET",
+            "method": "POST",
             "sortNum": 340000,
             "created": "2024-03-04T22:30:03.394Z",
-            "modified": "2024-03-04T22:30:03.394Z",
-            "headers": []
+            "modified": "2024-03-05T22:03:35.155Z",
+            "headers": [],
+            "params": [],
+            "reqType": "get",
+            "tests": []
         },
         {
             "_id": "e10e20ad-0c52-4318-aa83-9ad43e2d1970",
@@ -450,35 +449,14 @@
             "containerId": "a3c19430-b938-4ef3-ba3b-54293d674cc4",
             "name": "CONFIRM PURCHASE",
             "url": "",
-            "method": "GET",
+            "method": "PUT",
             "sortNum": 370000,
             "created": "2024-03-04T22:31:05.251Z",
-            "modified": "2024-03-04T22:31:05.251Z",
-            "headers": []
-        },
-        {
-            "_id": "727dc3e4-d84e-4944-90e7-1cd816c9d638",
-            "colId": "54df71e5-64ee-46b0-a2ac-2dd5e693582e",
-            "containerId": "a3c19430-b938-4ef3-ba3b-54293d674cc4",
-            "name": "HISTORY PURCHASE",
-            "url": "",
-            "method": "GET",
-            "sortNum": 380000,
-            "created": "2024-03-04T22:31:40.636Z",
-            "modified": "2024-03-04T22:31:40.636Z",
-            "headers": []
-        },
-        {
-            "_id": "2affee69-9d17-4d25-b616-fd9ef19dcd24",
-            "colId": "54df71e5-64ee-46b0-a2ac-2dd5e693582e",
-            "containerId": "9ede59ad-e254-4eb4-86ee-13e2ce832718",
-            "name": "EDIT PROFILE",
-            "url": "",
-            "method": "GET",
-            "sortNum": 410000,
-            "created": "2024-03-04T22:33:55.953Z",
-            "modified": "2024-03-04T22:33:55.953Z",
-            "headers": []
+            "modified": "2024-03-05T22:04:02.507Z",
+            "headers": [],
+            "params": [],
+            "reqType": "get",
+            "tests": []
         },
         {
             "_id": "39942906-8fc4-4c9f-943e-5f56e3ab93f1",
@@ -493,6 +471,18 @@
             "headers": [],
             "params": [],
             "tests": []
+        },
+        {
+            "_id": "727dc3e4-d84e-4944-90e7-1cd816c9d638",
+            "colId": "54df71e5-64ee-46b0-a2ac-2dd5e693582e",
+            "containerId": "9ede59ad-e254-4eb4-86ee-13e2ce832718",
+            "name": "HISTORY PURCHASE",
+            "url": "",
+            "method": "GET",
+            "sortNum": 415000,
+            "created": "2024-03-04T22:31:40.636Z",
+            "modified": "2024-03-04T22:31:40.636Z",
+            "headers": []
         }
     ]
 }
