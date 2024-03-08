@@ -44,7 +44,6 @@ export const updateUserInfo = async (req, res) => {
       const hashedPassword = await bcryptjs.hash(rest.password, 10);
       updates.password = hashedPassword;
     }
-    if (rest.status) updates.status = rest.status;
     if (rest.fullName) updates.fullName = rest.fullName;
     if (rest.address) updates.address = rest.address;
     if (rest.phoneNumber) updates.phoneNumber = rest.phoneNumber;
