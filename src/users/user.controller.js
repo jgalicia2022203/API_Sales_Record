@@ -92,7 +92,6 @@ export const deleteUser = async (req, res) => {
 };
 
 //CLIENT FUNCTIONS
-
 export const UpdateClientInfo = async (req, res) => {
   const userId = req.user.id;
   const { ...rest } = req.body;

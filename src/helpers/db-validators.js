@@ -54,3 +54,10 @@ export const existsInvoiceById = async (id = "") => {
     throw new Error(`the invoice with the id ${id} doesn't exist`);
   }
 };
+
+export const existsProductName = async (name = "") => {
+  const existingProduct = await Product.findOne({ name });
+  if (existingProduct) {
+    throw new Error(`The product with the name "${name}" already exists`);
+  }
+};

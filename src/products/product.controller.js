@@ -59,7 +59,7 @@ export const editProduct = async (req, res) => {
     if (rest.category) updates.category = rest.category;
     updates.updated_at = new Date();
 
-    const updatedUser = await User.findByIdAndUpdate(productId, updates, {
+    const updatedUser = await Product.findByIdAndUpdate(productId, updates, {
       new: true,
     });
 

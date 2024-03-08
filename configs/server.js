@@ -5,6 +5,7 @@ import express from "express";
 import helmet from "helmet";
 import morgan from "morgan";
 import authRoutes from "../src/auth/auth.routes.js";
+import productRoutes from "../src/products/product.routes.js";
 import userRoutes from "../src/users/user.routes.js";
 import { dbConnection } from "./mongo.js";
 
@@ -14,6 +15,7 @@ class Server {
     this.port = process.env.PORT;
     this.userPath = "/salesRecordAPI/v1/users";
     this.authPath = "/salesRecordAPI/v1/auth";
+    this.productPath = "/salesRecordAPI/v1/products";
 
     this.middlewares();
     this.connectDB();
@@ -35,6 +37,7 @@ class Server {
   routes() {
     this.app.use(this.userPath, userRoutes);
     this.app.use(this.authPath, authRoutes);
+    this.app.use(this.productPath, productRoutes);
   }
 
   listen() {
