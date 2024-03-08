@@ -1,30 +1,30 @@
-import User from "../users/user.model.js"
-import Product from "../products/product.model.js"
-import Category from "../categories/category.model.js"
-import Invoice from "../invoices/invoice.model.js"
+import Category from "../categories/category.model.js";
+import Invoice from "../invoices/invoice.model.js";
+import Product from "../products/product.model.js";
+import User from "../users/user.model.js";
 
 export const usernameValid = async (username = "") => {
-    const usernameValid = await User.findOne({ username });
-    return !!usernameValid;
+  const usernameValid = await User.findOne({ username });
+  return !!usernameValid;
 };
 
 export const emailValid = async (email = "") => {
-    const emailValid = await User.findOne({ email });
-    return !!emailValid;
+  const emailValid = await User.findOne({ email });
+  return !!emailValid;
 };
 
 export const existsUsername = async (username = "") => {
-    const existsUsername = await User.findOne({ username });
-    if (existsUsername) {
-      throw new Error(`the username ${username} is already registered`);
-    }
+  const existsUsername = await User.findOne({ username });
+  if (existsUsername) {
+    throw new Error(`the username ${username} is already registered`);
+  }
 };
 
 export const existsEmail = async (email = "") => {
-    const existsEmail = await User.findOne({ email });
-    if (existsEmail) {
-      throw new Error(`the email ${email} is already registered`);
-    }
+  const existsEmail = await User.findOne({ email });
+  if (existsEmail) {
+    throw new Error(`the email ${email} is already registered`);
+  }
 };
 
 export const existsUserById = async (id = "") => {

@@ -8,3 +8,11 @@ export const validateFields = (req, res, next) => {
 
   next();
 };
+
+export const confirmAction = (req, res, next) => {
+  const { confirmation } = req.body;
+  if (!confirmation || confirmation !== "confirm") {
+    return res.status(400).json({ msg: "Confirmation required" });
+  }
+  next();
+};
