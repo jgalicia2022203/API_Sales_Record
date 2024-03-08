@@ -28,29 +28,29 @@ export const existsEmail = async (email = "") => {
 };
 
 export const existsUserById = async (id = "") => {
-  const existsUser = await User.findOne({ id });
-  if (existsUser) {
+  const existsUser = await User.findById(id);
+  if (!existsUser) {
     throw new Error(`the user with the id ${id} doesn't exist`);
   }
 };
 
 export const existsProductById = async (id = "") => {
-  const existsProduct = await Product.findOne({ id });
-  if (existsProduct) {
+  const existsProduct = await Product.findById(id);
+  if (!existsProduct) {
     throw new Error(`the product with the id ${id} doesn't exist`);
   }
 };
 
 export const existsCategoryById = async (id = "") => {
-  const existsCategory = await Category.findOne({ id });
-  if (existsCategory) {
+  const existsCategory = await Category.findById(id);
+  if (!existsCategory) {
     throw new Error(`the category with the id ${id} doesn't exist`);
   }
 };
 
 export const existsInvoiceById = async (id = "") => {
-  const existsInvoice = await Invoice.findOne({ id });
-  if (existsInvoice) {
+  const existsInvoice = await Invoice.findById(id);
+  if (!existsInvoice) {
     throw new Error(`the invoice with the id ${id} doesn't exist`);
   }
 };

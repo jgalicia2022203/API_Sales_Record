@@ -17,20 +17,23 @@ export const register = async (req, res) => {
 };
 
 export const updateUserRole = async (req, res) => {
-  const { user } = req.params;
+  const { id } = req.params;
   const { role } = req.body;
   try {
+    const user = await User.findById(id);
     user.role = role;
     await user.save();
-    res.status(200).json({ msg: "User role updated successfully", user });
+    return res
+      .status(200)
+      .json({ msg: "User role updated successfully", user });
   } catch (error) {
     console.error("Error updating user role:", error);
-    res.status(500).json({ msg: "Internal server error" });
+    return res.status(500).json({ msg: "Internal server error" });
   }
 };
 
 export const updateUserInfo = async (req, res) => {
-  const { userId } = req.params;
+  const { id: userId } = req.params;
   const { ...rest } = req.body;
 
   try {
@@ -38,7 +41,7 @@ export const updateUserInfo = async (req, res) => {
     if (rest.username) updates.username = rest.username;
     if (rest.email) updates.email = rest.email;
     if (rest.password) {
-      const hashedPassword = await bcrypt.hash(rest.password, 10);
+      const hashedPassword = await bcryptjs.hash(rest.password, 10);
       updates.password = hashedPassword;
     }
     if (rest.status) updates.status = rest.status;
@@ -52,7 +55,7 @@ export const updateUserInfo = async (req, res) => {
       new: true,
     });
 
-    res
+    return res
       .status(200)
       .json({ msg: "User info updated successfully", user: updatedUser });
   } catch (error) {
@@ -92,7 +95,7 @@ export const deleteUser = async (req, res) => {
 //CLIENT FUNCTIONS
 
 export const UpdateClientInfo = async (req, res) => {
-  const { userId } = req.params;
+  const userId = req.user.id;
   const { ...rest } = req.body;
 
   try {
