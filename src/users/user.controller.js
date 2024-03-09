@@ -135,3 +135,20 @@ export const deleteUserAccount = async (req, res) => {
     res.status(500).json({ msg: "Internal server error" });
   }
 };
+
+export const obtenerHistorialCompras = async (req, res) => {
+  const userId = req.user.id;
+  try {
+    const user = await User.findById(userId).populate({
+      path: "history",
+      populate: {
+        path: "products",
+        model: "Product",
+      },
+    });
+    return res.status(200).json({ history: user.history });
+  } catch (error) {
+    console.error("Error fetching purchase history:", error);
+    return res.status(500).json({ message: "Internal server error" });
+  }
+};

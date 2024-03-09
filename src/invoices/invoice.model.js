@@ -1,27 +1,38 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
 const { Schema } = mongoose;
 
 const InvoiceSchema = new Schema({
-  invoiceNumber: {
-    type: String,
-    required: [true, "Invoice Number is obligatory"],
-    unique: true,
-  },
   user: {
     type: Schema.Types.ObjectId,
-    ref: 'User',
+    ref: "User",
     required: [true, "User is obligatory"],
   },
-  products: [{
+  shopping: {
     type: Schema.Types.ObjectId,
-    ref: 'Product',
-    required: [true, "Product is obligatory"],
-  }],
-  amount: {
-    type: Number,
-    required: [true, "Amount is obligatory"],
+    ref: "ShoppingCart",
+    required: true,
   },
+  total: {
+    type: Number,
+    required: true,
+  },
+  items: [
+    {
+      product: {
+        type: Object,
+        required: true,
+      },
+      quantity: {
+        type: Number,
+        required: true,
+      },
+      subtotal: {
+        type: Number,
+        required: true,
+      },
+    },
+  ],
   date: {
     type: Date,
     default: Date.now,

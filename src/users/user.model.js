@@ -39,12 +39,6 @@ const UserSchema = new Schema({
   dateOfBirth: {
     type: Date,
   },
-  history: [
-    {
-      type: Schema.Types.ObjectId,
-      ref: "Invoice",
-    },
-  ],
   created_at: {
     type: Date,
     default: Date.now,

@@ -11,7 +11,7 @@ import {
   validateFields,
 } from "../middlewares/validate-fields.js";
 import { validateJWT } from "../middlewares/validate-jwt.js";
-import { hasRole } from "../middlewares/validate-roles.js";
+import { hasRole, validRole } from "../middlewares/validate-roles.js";
 import {
   UpdateClientInfo,
   deleteUser,
@@ -48,7 +48,7 @@ router.put(
     check("id", "isn't a valid id").isMongoId(),
     check("id").custom(existsUserById),
     check("role", "role cannot be empty").not().isEmpty(),
-    /* check("role").custom(validRole), */
+    validRole,
     validateFields,
   ],
   updateUserRole
@@ -90,7 +90,7 @@ router.put(
 router.delete(
   "/profile-settings",
   validateJWT,
-  [confirmAction],
+  confirmAction,
   deleteUserAccount
 );
 

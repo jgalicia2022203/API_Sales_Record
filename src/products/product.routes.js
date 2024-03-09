@@ -75,7 +75,7 @@ router.delete(
   validateJWT,
   hasRole,
   [
-    check("id", "user id required").not().isEmpty(),
+    check("id", "product id required").not().isEmpty(),
     check("id").custom(existsProductById),
     validateFields,
   ],
@@ -90,7 +90,7 @@ router.get(
   "/category/:id",
   validateJWT,
   [
-    check("id", "user id required").not().isEmpty(),
+    check("id", "category id required").not().isEmpty(),
     check("id").custom(existsCategoryById),
   ],
   getProductsByCategory

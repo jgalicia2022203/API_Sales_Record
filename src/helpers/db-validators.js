@@ -61,3 +61,10 @@ export const existsProductName = async (name = "") => {
     throw new Error(`The product with the name "${name}" already exists`);
   }
 };
+
+export const existsCategoryName = async (name = "") => {
+  const existingCategory = await Category.findOne({ name });
+  if (existingCategory) {
+    throw new Error(`The category with the name "${name}" already exists`);
+  }
+};

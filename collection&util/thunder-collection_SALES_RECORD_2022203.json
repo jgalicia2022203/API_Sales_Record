@@ -1,0 +1,691 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "SALES_RECORD_2022203",
+    "dateExported": "2024-03-11T08:57:00.980Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "3b9361f9-3682-4569-b259-1e7c828d254c",
+            "name": "ADMIN",
+            "containerId": "",
+            "created": "2024-03-08T08:25:21.043Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "47a6f084-2f2a-4571-a3ea-030918c4dc07",
+            "name": "USERS MANAGEMENT",
+            "containerId": "3b9361f9-3682-4569-b259-1e7c828d254c",
+            "created": "2024-03-08T08:25:21.047Z",
+            "sortNum": 15000
+        },
+        {
+            "_id": "10f1f28f-b9c5-4fb4-ac45-bb4d052839b0",
+            "name": "CLIENT",
+            "containerId": "",
+            "created": "2024-03-08T08:25:21.044Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "131622e3-76b2-42f0-8071-0ff3ca950c23",
+            "name": "CATEGORIES MANAGEMENT",
+            "containerId": "3b9361f9-3682-4569-b259-1e7c828d254c",
+            "created": "2024-03-08T08:25:21.046Z",
+            "sortNum": 22500
+        },
+        {
+            "_id": "2cf62bf1-74f8-45f7-9f56-d0e6e509bbc1",
+            "name": "PRODUCTS MANAGEMENT",
+            "containerId": "3b9361f9-3682-4569-b259-1e7c828d254c",
+            "created": "2024-03-08T08:25:21.045Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "8e2be220-41cf-4d66-ac1c-62d12ae378ec",
+            "name": "PROFILE",
+            "containerId": "10f1f28f-b9c5-4fb4-ac45-bb4d052839b0",
+            "created": "2024-03-08T08:25:21.052Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "1b65918b-0608-4f4e-84b4-ad7ec5262f9f",
+            "name": "INVOICES MANAGEMENT",
+            "containerId": "3b9361f9-3682-4569-b259-1e7c828d254c",
+            "created": "2024-03-08T08:25:21.048Z",
+            "sortNum": 60000
+        },
+        {
+            "_id": "c2d27c4a-4a99-45b9-a9c6-0c45d33aef87",
+            "name": "LOGIN & REGISTER",
+            "containerId": "",
+            "created": "2024-03-08T08:25:21.049Z",
+            "sortNum": 70000
+        },
+        {
+            "_id": "3a3ccdf1-9b4e-4eae-acbd-e392b14fbf0a",
+            "name": "PRODUCTS",
+            "containerId": "10f1f28f-b9c5-4fb4-ac45-bb4d052839b0",
+            "created": "2024-03-08T08:25:21.050Z",
+            "sortNum": 80000
+        },
+        {
+            "_id": "a72666bc-5084-4d18-9822-bb9618b7c605",
+            "name": "SHOPPING CART",
+            "containerId": "10f1f28f-b9c5-4fb4-ac45-bb4d052839b0",
+            "created": "2024-03-08T08:25:21.051Z",
+            "sortNum": 90000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "0a6ec308-0ed7-44bf-8ff8-3937e1653802",
+            "colId": "60f3b257-7d6b-4e13-acb5-ed1e1aad32f9",
+            "containerId": "3a3ccdf1-9b4e-4eae-acbd-e392b14fbf0a",
+            "name": "MOST SELLED PRODUCTS",
+            "url": "http://localhost:3000/salesRecordAPI/v1/products/most-sold",
+            "method": "GET",
+            "sortNum": 5000,
+            "created": "2024-03-08T08:25:21.061Z",
+            "modified": "2024-03-11T08:17:51.945Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVlYmUwMjk5ODdhMzc3MmEyYTQyY2MiLCJpYXQiOjE3MTAxNDUwMzIsImV4cCI6MTcxMDE0ODYzMn0.BS2iZGX1IexhsXr7aWL3zPc3dazSG4kSTX9mVCJwsZc"
+                }
+            ],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "71fc1b2b-01dd-477f-95a3-3e6e548a1d7c",
+            "colId": "60f3b257-7d6b-4e13-acb5-ed1e1aad32f9",
+            "containerId": "2cf62bf1-74f8-45f7-9f56-d0e6e509bbc1",
+            "name": "ADD PRODUCT",
+            "url": "http://localhost:3000/salesRecordAPI/v1/products/new-product",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-08T08:25:21.043Z",
+            "modified": "2024-03-11T08:13:35.974Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVlYjliMTk5ODdhMzc3MmEyYTQyNWMiLCJpYXQiOjE3MTAxNDQ2NTYsImV4cCI6MTcxMDE0ODI1Nn0.77_TzYqx3Afb2EYMFNYEzMwmougMv65-QiJMjspZUdA"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Camisa de algodón\",\n  \"description\": \"Camisa de algodón de alta calidad, ideal para ocasiones formales.\",\n  \"price\": 29.99\n}\n",
+                "form": []
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "0fc77f35-a8c7-4bbb-8800-95787be2e727",
+            "colId": "60f3b257-7d6b-4e13-acb5-ed1e1aad32f9",
+            "containerId": "c2d27c4a-4a99-45b9-a9c6-0c45d33aef87",
+            "name": "LOGIN",
+            "url": "http://localhost:3000/salesRecordAPI/v1/auth/login",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-08T08:25:21.063Z",
+            "modified": "2024-03-11T08:50:12.408Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"tonelito\",\n  \"password\": \"0BF4C2BA27\"\n}",
+                "form": []
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "146a4604-8666-4d60-a900-63b22fcc6478",
+            "colId": "60f3b257-7d6b-4e13-acb5-ed1e1aad32f9",
+            "containerId": "2cf62bf1-74f8-45f7-9f56-d0e6e509bbc1",
+            "name": "PRODUCT INFO",
+            "url": "http://localhost:3000/salesRecordAPI/v1/products/product-details/65eebd2f9987a3772a2a42ab",
+            "method": "GET",
+            "sortNum": 15000,
+            "created": "2024-03-08T08:25:21.045Z",
+            "modified": "2024-03-11T08:14:00.520Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVlYjliMTk5ODdhMzc3MmEyYTQyNWMiLCJpYXQiOjE3MTAxNDQ2NTYsImV4cCI6MTcxMDE0ODI1Nn0.77_TzYqx3Afb2EYMFNYEzMwmougMv65-QiJMjspZUdA"
+                }
+            ],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "ad5170c5-27f5-49ef-b33f-1f6331ecb115",
+            "colId": "60f3b257-7d6b-4e13-acb5-ed1e1aad32f9",
+            "containerId": "2cf62bf1-74f8-45f7-9f56-d0e6e509bbc1",
+            "name": "LIST PRODUCTS",
+            "url": "http://localhost:3000/salesRecordAPI/v1/products/",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-03-08T08:25:21.044Z",
+            "modified": "2024-03-11T08:14:13.076Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVlYjliMTk5ODdhMzc3MmEyYTQyNWMiLCJpYXQiOjE3MTAxNDQ2NTYsImV4cCI6MTcxMDE0ODI1Nn0.77_TzYqx3Afb2EYMFNYEzMwmougMv65-QiJMjspZUdA"
+                }
+            ],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "f9487e75-4564-4903-9cb7-3bfc32589177",
+            "colId": "60f3b257-7d6b-4e13-acb5-ed1e1aad32f9",
+            "containerId": "2cf62bf1-74f8-45f7-9f56-d0e6e509bbc1",
+            "name": "EDIT PRODUCT",
+            "url": "http://localhost:3000/salesRecordAPI/v1/products/edit-product/65eebd2f9987a3772a2a42ab",
+            "method": "PUT",
+            "sortNum": 22500,
+            "created": "2024-03-08T08:25:21.046Z",
+            "modified": "2024-03-11T08:14:40.668Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVlYjliMTk5ODdhMzc3MmEyYTQyNWMiLCJpYXQiOjE3MTAxNDQ2NTYsImV4cCI6MTcxMDE0ODI1Nn0.77_TzYqx3Afb2EYMFNYEzMwmougMv65-QiJMjspZUdA"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"chaqueta de cuero\",\n  \"description\": \"chaqueta de cuero de alta calidad, para invierno\",\n  \"price\": 500.00,\n  \"stock\": 10\n}",
+                "form": []
+            },
+            "reqType": "put",
+            "tests": []
+        },
+        {
+            "_id": "3721dfb8-1cdb-4fcf-98b7-2016eef234ce",
+            "colId": "60f3b257-7d6b-4e13-acb5-ed1e1aad32f9",
+            "containerId": "2cf62bf1-74f8-45f7-9f56-d0e6e509bbc1",
+            "name": "OUT OF STOCK",
+            "url": "http://localhost:3000/salesRecordAPI/v1/products/out-of-stock",
+            "method": "GET",
+            "sortNum": 25000,
+            "created": "2024-03-08T08:25:21.060Z",
+            "modified": "2024-03-11T08:15:03.229Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVlYjliMTk5ODdhMzc3MmEyYTQyNWMiLCJpYXQiOjE3MTAxNDQ2NTYsImV4cCI6MTcxMDE0ODI1Nn0.77_TzYqx3Afb2EYMFNYEzMwmougMv65-QiJMjspZUdA"
+                }
+            ],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "996275c2-34c6-4c5f-9b3e-604cf474e109",
+            "colId": "60f3b257-7d6b-4e13-acb5-ed1e1aad32f9",
+            "containerId": "2cf62bf1-74f8-45f7-9f56-d0e6e509bbc1",
+            "name": "BEST SELLERS",
+            "url": "http://localhost:3000/salesRecordAPI/v1/products/best-selling",
+            "method": "GET",
+            "sortNum": 37500,
+            "created": "2024-03-08T08:25:21.074Z",
+            "modified": "2024-03-11T08:15:21.810Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVlYjliMTk5ODdhMzc3MmEyYTQyNWMiLCJpYXQiOjE3MTAxNDQ2NTYsImV4cCI6MTcxMDE0ODI1Nn0.77_TzYqx3Afb2EYMFNYEzMwmougMv65-QiJMjspZUdA"
+                }
+            ],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "609fcb33-8224-488f-b002-9fe301b381ee",
+            "colId": "60f3b257-7d6b-4e13-acb5-ed1e1aad32f9",
+            "containerId": "2cf62bf1-74f8-45f7-9f56-d0e6e509bbc1",
+            "name": "DELETE PRODUCT",
+            "url": "http://localhost:3000/salesRecordAPI/v1/products/delete-product/65ee42cb61fda270f6be0cd8",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-03-08T08:25:21.047Z",
+            "modified": "2024-03-11T08:16:21.224Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVlYjliMTk5ODdhMzc3MmEyYTQyNWMiLCJpYXQiOjE3MTAxNDQ2NTYsImV4cCI6MTcxMDE0ODI1Nn0.77_TzYqx3Afb2EYMFNYEzMwmougMv65-QiJMjspZUdA"
+                }
+            ],
+            "params": [],
+            "reqType": "del",
+            "tests": []
+        },
+        {
+            "_id": "3063f569-243d-489e-8329-9b58eaa797b7",
+            "colId": "60f3b257-7d6b-4e13-acb5-ed1e1aad32f9",
+            "containerId": "131622e3-76b2-42f0-8071-0ff3ca950c23",
+            "name": "ADD CATEGORY",
+            "url": "http://localhost:3000/salesRecordAPI/v1/categories/new-category",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-03-08T08:25:21.048Z",
+            "modified": "2024-03-11T08:09:43.185Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVlYjliMTk5ODdhMzc3MmEyYTQyNWMiLCJpYXQiOjE3MTAxNDM5MjUsImV4cCI6MTcxMDE0NzUyNX0.cpQ0y8UaLWdPecla7psqEaE6ZnbdkaPdIezEmlKoozo"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Men T-shirts\",\n  \"description\": \"t-shirts for men\"\n}",
+                "form": []
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "6cd6a15a-57a3-4575-a22a-fdb43a4dad8b",
+            "colId": "60f3b257-7d6b-4e13-acb5-ed1e1aad32f9",
+            "containerId": "131622e3-76b2-42f0-8071-0ff3ca950c23",
+            "name": "LIST CATEGORIES",
+            "url": "http://localhost:3000/salesRecordAPI/v1/categories/",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-03-08T08:25:21.049Z",
+            "modified": "2024-03-11T08:09:50.207Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVlYjliMTk5ODdhMzc3MmEyYTQyNWMiLCJpYXQiOjE3MTAxNDM5MjUsImV4cCI6MTcxMDE0NzUyNX0.cpQ0y8UaLWdPecla7psqEaE6ZnbdkaPdIezEmlKoozo"
+                }
+            ],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "bd52195e-a160-4cae-8786-280e60cf60dc",
+            "colId": "60f3b257-7d6b-4e13-acb5-ed1e1aad32f9",
+            "containerId": "131622e3-76b2-42f0-8071-0ff3ca950c23",
+            "name": "EDIT CATEGORY",
+            "url": "http://localhost:3000/salesRecordAPI/v1/categories/edit-category/65eebc479987a3772a2a428a",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2024-03-08T08:25:21.050Z",
+            "modified": "2024-03-11T08:11:10.145Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVlYjliMTk5ODdhMzc3MmEyYTQyNWMiLCJpYXQiOjE3MTAxNDQ2NTYsImV4cCI6MTcxMDE0ODI1Nn0.77_TzYqx3Afb2EYMFNYEzMwmougMv65-QiJMjspZUdA"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Unisex T-shirts\",\n  \"description\": \"t shirts for men and women\"\n}",
+                "form": []
+            },
+            "reqType": "put",
+            "tests": []
+        },
+        {
+            "_id": "bee69efa-a39e-4976-9eb5-0b3d0a9a9cdf",
+            "colId": "60f3b257-7d6b-4e13-acb5-ed1e1aad32f9",
+            "containerId": "1b65918b-0608-4f4e-84b4-ad7ec5262f9f",
+            "name": "EDIT INVOICE",
+            "url": "http://localhost:3000/salesRecordAPI/v1/shoppingCart/update/65eec14c9987a3772a2a42fe",
+            "method": "PUT",
+            "sortNum": 85000,
+            "created": "2024-03-08T08:25:21.056Z",
+            "modified": "2024-03-11T08:55:42.197Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVlYjliMTk5ODdhMzc3MmEyYTQyNWMiLCJpYXQiOjE3MTAxNDcwMTIsImV4cCI6MTcxMDE1MDYxMn0.bavbcGyJXqjasZ2m842RccLmdooUtmG2fasGe_w-xk0"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"status\": \"Paid\"\n}",
+                "form": []
+            },
+            "reqType": "put",
+            "tests": []
+        },
+        {
+            "_id": "652f9e54-9924-46b4-941e-d1b9ac42eade",
+            "colId": "60f3b257-7d6b-4e13-acb5-ed1e1aad32f9",
+            "containerId": "131622e3-76b2-42f0-8071-0ff3ca950c23",
+            "name": "DELETE CATEGORY",
+            "url": "http://localhost:3000/salesRecordAPI/v1/categories/delete-category/65ee58d2dad452e4689d5ac1",
+            "method": "DELETE",
+            "sortNum": 90000,
+            "created": "2024-03-08T08:25:21.051Z",
+            "modified": "2024-03-11T08:11:39.349Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVlYjliMTk5ODdhMzc3MmEyYTQyNWMiLCJpYXQiOjE3MTAxNDQ2NTYsImV4cCI6MTcxMDE0ODI1Nn0.77_TzYqx3Afb2EYMFNYEzMwmougMv65-QiJMjspZUdA"
+                }
+            ],
+            "params": [],
+            "reqType": "del",
+            "tests": []
+        },
+        {
+            "_id": "0471b34f-04c8-44d3-903b-40c9b352e12c",
+            "colId": "60f3b257-7d6b-4e13-acb5-ed1e1aad32f9",
+            "containerId": "47a6f084-2f2a-4571-a3ea-030918c4dc07",
+            "name": "CHANGE ROLE",
+            "url": "http://localhost:3000/salesRecordAPI/v1/users/update-role/65eea60c5938103e7aaf2e28",
+            "method": "PUT",
+            "sortNum": 110000,
+            "created": "2024-03-08T08:25:21.052Z",
+            "modified": "2024-03-11T07:28:17.197Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVlYTYwYzU5MzgxMDNlN2FhZjJlMjgiLCJpYXQiOjE3MTAxNDA5NjYsImV4cCI6MTcxMDE0NDU2Nn0.IlOd5eYWIz-xgZU9r5wkSwY-9hFEmpuIHZIXrhDX4e4"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"role\": \"CLIENT_ROLE\"\n}\n",
+                "form": []
+            },
+            "reqType": "put",
+            "tests": []
+        },
+        {
+            "_id": "4173e155-3b27-4bff-a795-5bd256f6bb4e",
+            "colId": "60f3b257-7d6b-4e13-acb5-ed1e1aad32f9",
+            "containerId": "47a6f084-2f2a-4571-a3ea-030918c4dc07",
+            "name": "EDIT USER INFO",
+            "url": "http://localhost:3000/salesRecordAPI/v1/users/update-info/65eeb9d19987a3772a2a4265",
+            "method": "PUT",
+            "sortNum": 110000,
+            "created": "2024-03-08T08:25:21.053Z",
+            "modified": "2024-03-11T08:02:31.613Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVlYjliMTk5ODdhMzc3MmEyYTQyNWMiLCJpYXQiOjE3MTAxNDM5MjUsImV4cCI6MTcxMDE0NzUyNX0.cpQ0y8UaLWdPecla7psqEaE6ZnbdkaPdIezEmlKoozo"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"juancho\",\n  \"email\": \"juancho@gmail.com\",\n  \"password\": \"0BF4C2BA27\",\n  \"fullName\": \"Juan Luis Galicia Mazariegos\",\n  \"address\": \"20 street 2-46 zone 10\",\n  \"phoneNumber\": \"56520138\",\n  \"dateOfBirth\": \"2005-11-21T12:30:00.000Z\"\n}",
+                "form": []
+            },
+            "reqType": "put",
+            "tests": []
+        },
+        {
+            "_id": "1de0cbc9-7955-4f49-9d6b-3ab35c94f91f",
+            "colId": "60f3b257-7d6b-4e13-acb5-ed1e1aad32f9",
+            "containerId": "47a6f084-2f2a-4571-a3ea-030918c4dc07",
+            "name": "LIST USERS",
+            "url": "http://localhost:3000/salesRecordAPI/v1/users/",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2024-03-08T08:25:21.055Z",
+            "modified": "2024-03-11T08:02:59.031Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVlYjliMTk5ODdhMzc3MmEyYTQyNWMiLCJpYXQiOjE3MTAxNDM5MjUsImV4cCI6MTcxMDE0NzUyNX0.cpQ0y8UaLWdPecla7psqEaE6ZnbdkaPdIezEmlKoozo"
+                }
+            ],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "178a9f86-cf20-40c8-bd6c-22d52a2bd11e",
+            "colId": "60f3b257-7d6b-4e13-acb5-ed1e1aad32f9",
+            "containerId": "47a6f084-2f2a-4571-a3ea-030918c4dc07",
+            "name": "DELETE USER",
+            "url": "http://localhost:3000/salesRecordAPI/v1/users/delete-user/65eeb9d19987a3772a2a4265",
+            "method": "DELETE",
+            "sortNum": 130000,
+            "created": "2024-03-08T08:25:21.054Z",
+            "modified": "2024-03-11T08:03:29.059Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVlYjliMTk5ODdhMzc3MmEyYTQyNWMiLCJpYXQiOjE3MTAxNDM5MjUsImV4cCI6MTcxMDE0NzUyNX0.cpQ0y8UaLWdPecla7psqEaE6ZnbdkaPdIezEmlKoozo"
+                }
+            ],
+            "params": [],
+            "reqType": "del",
+            "tests": []
+        },
+        {
+            "_id": "4cc2ebd4-4c75-4ff6-a688-6caf93a95e4c",
+            "colId": "60f3b257-7d6b-4e13-acb5-ed1e1aad32f9",
+            "containerId": "8e2be220-41cf-4d66-ac1c-62d12ae378ec",
+            "name": "EDIT PROFILE",
+            "url": "http://localhost:3000/salesRecordAPI/v1/users/profile-settings",
+            "method": "PUT",
+            "sortNum": 307500,
+            "created": "2024-03-08T08:25:21.072Z",
+            "modified": "2024-03-11T08:04:45.448Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVlYmFmMDk5ODdhMzc3MmEyYTQyN2MiLCJpYXQiOjE3MTAxNDQyNjYsImV4cCI6MTcxMDE0Nzg2Nn0.uOkKwaNaHciWC1hY6V2Me6qKIKgYUM-Q2t3GynL3boo"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"fullName\": \"Juan Luis Galicia Mazariegos\",\n  \"address\": \"20 street 2-46 zone 10\",\n  \"phoneNumber\": \"56520138\",\n  \"dateOfBirth\": \"2005-11-21T12:30:00.000Z\"\n}",
+                "form": []
+            },
+            "reqType": "put",
+            "tests": []
+        },
+        {
+            "_id": "62bc0c54-190d-45b3-bc10-ecba97a7aebf",
+            "colId": "60f3b257-7d6b-4e13-acb5-ed1e1aad32f9",
+            "containerId": "3a3ccdf1-9b4e-4eae-acbd-e392b14fbf0a",
+            "name": "SEARCH PRODUCT",
+            "url": "http://localhost:3000/salesRecordAPI/v1/products/search?name=cha",
+            "method": "GET",
+            "sortNum": 310000,
+            "created": "2024-03-08T08:25:21.066Z",
+            "modified": "2024-03-11T08:18:07.315Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVlYmUwMjk5ODdhMzc3MmEyYTQyY2MiLCJpYXQiOjE3MTAxNDUwMzIsImV4cCI6MTcxMDE0ODYzMn0.BS2iZGX1IexhsXr7aWL3zPc3dazSG4kSTX9mVCJwsZc"
+                }
+            ],
+            "params": [
+                {
+                    "name": "name",
+                    "value": "cha",
+                    "isPath": false
+                }
+            ],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "8801f348-89b4-4db9-a74d-bb30488ec1a1",
+            "colId": "60f3b257-7d6b-4e13-acb5-ed1e1aad32f9",
+            "containerId": "3a3ccdf1-9b4e-4eae-acbd-e392b14fbf0a",
+            "name": "CATEGORIES LIST",
+            "url": "http://localhost:3000/salesRecordAPI/v1/categories/",
+            "method": "GET",
+            "sortNum": 320000,
+            "created": "2024-03-08T08:25:21.067Z",
+            "modified": "2024-03-11T08:20:22.896Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVlYmUwMjk5ODdhMzc3MmEyYTQyY2MiLCJpYXQiOjE3MTAxNDUwMzIsImV4cCI6MTcxMDE0ODYzMn0.BS2iZGX1IexhsXr7aWL3zPc3dazSG4kSTX9mVCJwsZc"
+                }
+            ],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "ad799226-d4ee-4dc3-afe3-4457b9d4a119",
+            "colId": "60f3b257-7d6b-4e13-acb5-ed1e1aad32f9",
+            "containerId": "3a3ccdf1-9b4e-4eae-acbd-e392b14fbf0a",
+            "name": "CATEGORY PRODUCTS",
+            "url": "http://localhost:3000/salesRecordAPI/v1/products/category/123",
+            "method": "GET",
+            "sortNum": 330000,
+            "created": "2024-03-08T08:25:21.068Z",
+            "modified": "2024-03-11T08:22:39.759Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVlYmUwMjk5ODdhMzc3MmEyYTQyY2MiLCJpYXQiOjE3MTAxNDUwMzIsImV4cCI6MTcxMDE0ODYzMn0.BS2iZGX1IexhsXr7aWL3zPc3dazSG4kSTX9mVCJwsZc"
+                }
+            ],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "9e61e5b8-5d0a-4121-9741-ddc7a21a0fc1",
+            "colId": "60f3b257-7d6b-4e13-acb5-ed1e1aad32f9",
+            "containerId": "a72666bc-5084-4d18-9822-bb9618b7c605",
+            "name": "ADD PRODUCTS",
+            "url": "http://localhost:3000/salesRecordAPI/v1/shoppingCart/addProducts",
+            "method": "POST",
+            "sortNum": 340000,
+            "created": "2024-03-08T08:25:21.069Z",
+            "modified": "2024-03-11T08:25:24.328Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVlYmUwMjk5ODdhMzc3MmEyYTQyY2MiLCJpYXQiOjE3MTAxNDU0NzUsImV4cCI6MTcxMDE0OTA3NX0.GnYhV85cvBaEC9khiUlaypyTUN4-HJIMz1Q_yip-Xe4"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"product\": \"65eebd2f9987a3772a2a42ab\",\n  \"stock\": 10\n}",
+                "form": []
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "38192979-57d1-44ec-8360-735710077482",
+            "colId": "60f3b257-7d6b-4e13-acb5-ed1e1aad32f9",
+            "containerId": "a72666bc-5084-4d18-9822-bb9618b7c605",
+            "name": "CONFIRM PURCHASE",
+            "url": "http://localhost:3000/salesRecordAPI/v1/shoppingCart/purchase",
+            "method": "POST",
+            "sortNum": 370000,
+            "created": "2024-03-08T08:25:21.070Z",
+            "modified": "2024-03-11T08:31:08.835Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVlYmUwMjk5ODdhMzc3MmEyYTQyY2MiLCJpYXQiOjE3MTAxNDU0NzUsImV4cCI6MTcxMDE0OTA3NX0.GnYhV85cvBaEC9khiUlaypyTUN4-HJIMz1Q_yip-Xe4"
+                }
+            ],
+            "params": [],
+            "reqType": "put",
+            "tests": []
+        },
+        {
+            "_id": "afb56dd5-4916-403f-84ea-41678044fe84",
+            "colId": "60f3b257-7d6b-4e13-acb5-ed1e1aad32f9",
+            "containerId": "8e2be220-41cf-4d66-ac1c-62d12ae378ec",
+            "name": "DELETE ACCOUNT",
+            "url": "http://localhost:3000/salesRecordAPI/v1/users//profile-settings",
+            "method": "DELETE",
+            "sortNum": 410000,
+            "created": "2024-03-08T08:25:21.073Z",
+            "modified": "2024-03-11T08:05:27.996Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVlYmFmMDk5ODdhMzc3MmEyYTQyN2MiLCJpYXQiOjE3MTAxNDQyNjYsImV4cCI6MTcxMDE0Nzg2Nn0.uOkKwaNaHciWC1hY6V2Me6qKIKgYUM-Q2t3GynL3boo"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"confirmation\": \"confirm\"\n}",
+                "form": []
+            },
+            "reqType": "del",
+            "tests": []
+        },
+        {
+            "_id": "bfad578f-6877-462f-b4a3-ebc26d3275ba",
+            "colId": "60f3b257-7d6b-4e13-acb5-ed1e1aad32f9",
+            "containerId": "8e2be220-41cf-4d66-ac1c-62d12ae378ec",
+            "name": "HISTORY",
+            "url": "http://localhost:3000/salesRecordAPI/v1/shoppingCart/history",
+            "method": "GET",
+            "sortNum": 420000,
+            "created": "2024-03-08T08:25:21.058Z",
+            "modified": "2024-03-11T08:44:35.230Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVlYmUwMjk5ODdhMzc3MmEyYTQyY2MiLCJpYXQiOjE3MTAxNDU0NzUsImV4cCI6MTcxMDE0OTA3NX0.GnYhV85cvBaEC9khiUlaypyTUN4-HJIMz1Q_yip-Xe4"
+                }
+            ],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "1b09196d-cdbe-461a-a7cb-0168fcf1ea87",
+            "colId": "60f3b257-7d6b-4e13-acb5-ed1e1aad32f9",
+            "containerId": "c2d27c4a-4a99-45b9-a9c6-0c45d33aef87",
+            "name": "REGISTER",
+            "url": "http://localhost:3000/salesRecordAPI/v1/users/register",
+            "method": "POST",
+            "sortNum": 425000,
+            "created": "2024-03-08T08:26:09.240Z",
+            "modified": "2024-03-11T07:59:13.959Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"juancho\",\n  \"email\": \"jgaliciamazariegos@gmail.com\",\n  \"password\": \"0BF4C2BA27\"\n}",
+                "form": []
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "69c9472b-0645-44e1-af93-a756436e2000",
+            "colId": "60f3b257-7d6b-4e13-acb5-ed1e1aad32f9",
+            "containerId": "a72666bc-5084-4d18-9822-bb9618b7c605",
+            "name": "INVOICE",
+            "url": "http://localhost:3000/salesRecordAPI/v1/shoppingCart/65eec14c9987a3772a2a42fe/pdf",
+            "method": "POST",
+            "sortNum": 435000,
+            "created": "2024-03-11T06:33:35.655Z",
+            "modified": "2024-03-11T08:32:05.793Z",
+            "headers": [],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        }
+    ]
+}
